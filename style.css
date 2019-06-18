@@ -3,18 +3,25 @@ body{
     min-height: 100vh;
     text-align: center;
     /* display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "header header header"
-    " nav nav nav "
-    "main main main"
-    "content content content"
-    "footer footer footer"
-   */
+    ". nav ."
+    ". main . "
+    ". content ."
+    "footer footer footer"; */
 }
-header{
-  display: inline-block;
+
+.hotdog-banner {
+    background-image: url("./img/OP_Frankfurter-Spread.jpeg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
 }
+
 ul {
   display: inline-block;
   list-style-type: none;
@@ -39,16 +46,41 @@ li a {
 li a:hover {
   background-color:lightgray;
 }
+img{
+  max-height: 250px;
+  max-width: 100%;
+}
+.main{
+  height: -webkit-box-reflect;
+  min-height: 200PX;
+  overflow: hidden;
+  padding: 0px;
+}
+#main-text{
+  font-size: 1.5rem;
+  padding: 20px;
+}
 .content{
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: blue;
+  background-color: lightgray;
   
 }
   
 
-/* header { grid-column: header / header; } 
-.nav { grid-area: nav; }
-.main { grid-area: main; }
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:darkgrey;
+  color: blcak;
+  text-align: center;
+}
+/* 
+.hotdog-banner{ grid-area: header;}
+nav { grid-area: nav;}
+.main { grid-area: main;}
 .content { grid-area: content;}
-footer { grid-area: footer; } */
+footer { grid-area: footer;} */
